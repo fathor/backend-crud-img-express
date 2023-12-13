@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "id" : "3"
+}
+###
+GET http://localhost:3000/user/1
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name" : "Zyan",
+    "email" : "zyan@gmail.com",
+    "gender": "Male"
+}
+###
+PATCH http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+    "name" : "Dzaka Zafran",
+    "email" : "zafran@gmail.com",
+    "gender": "Male"
+}
+###
+DELETE http://localhost:3000/user/1
